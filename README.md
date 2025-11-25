@@ -23,4 +23,4 @@
    ```bash
    git clone https://github.com/Farjad81/Tarkhine.git
 
-![Alt text](https://ibb.co/qLpc79Xp)
+![Image](https://ibb.co/qLpc79Xp)
