@@ -4,6 +4,7 @@ import Card from "@/app/cards/page";
 import MenuHomeSection from "../menu-home-section/page";
 import AboutMain from "@/app/main-about/page";
 import HomeCard from "../home-card/page";
+import Footer from "@/app/footer/footer";
 export default function MainPage() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function MainPage() {
       <MenuHomeSection />
       <AboutMain />
       <HomeCard/>
+      <Footer/>
       {/* <Card/> */}
     </>
   );
