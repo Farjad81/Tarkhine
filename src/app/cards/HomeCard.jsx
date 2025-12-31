@@ -1,10 +1,9 @@
 export default function Cards({ img, title, par }) {
   const symbol = ">";
   return (
-    <div className=" group relative overflow-hidden shadow-lg cursor-pointer w-1/5 h-70 border border-gray-300 hover:border-green-300 rounded-lg bg-white">
-
+    <div className="group relative overflow-hidden shadow-lg cursor-pointer w-full md:w-1/5 h-auto md:h-70 border border-gray-300 hover:border-green-300 rounded-lg bg-white">
       {/* بخش تصویر (ارتفاع تغییر می‌کند) */}
-      <div className="w-full h-2/3 overflow-hidden transition-all duration-500 group-hover:h-1/2">
+      <div className="w-full h-48 md:h-2/3 overflow-hidden transition-all duration-500 md:group-hover:h-1/2 group-hover:h-1/2">
         <img
           src={img || "/Image.png"}
           alt={title || "image"}
@@ -14,16 +13,10 @@ export default function Cards({ img, title, par }) {
       </div>
 
       {/* بخش متن + دکمه (ارتفاع ثابت و بدون بیرون‌زدگی) */}
-      <div className="absolute bottom-0 w-full p-4 bg-white h-1/2 overflow-hidden flex flex-col justify-center items-center">
-        <h1 className="text-black text-2xl font-bold">
-          شعبه ونک
-        </h1>
+      <div className="relative md:absolute md:bottom-0 w-full p-4 bg-white md:h-1/2 h-auto overflow-hidden flex flex-col justify-center items-center">
+        <h1 className="text-black text-2xl font-bold">شعبه ونک</h1>
         {/* متن – هرگز از کارت بیرون نمی‌زند */}
-        <p 
-          className="text-gray-500 text-sm transition-all duration-500 
-          line-clamp-1 group-hover:line-clamp-none
-          overflow-y-hidden"
-        >
+        <p className="text-gray-500 text-sm transition-all duration-500 line-clamp-1 group-hover:line-clamp-none overflow-y-hidden text-center break-words max-w-full">
           {par || "میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶"}
         </p>
 
